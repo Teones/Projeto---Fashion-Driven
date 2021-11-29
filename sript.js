@@ -1,4 +1,4 @@
-// let nome = prompt("Qual o seu nome?")
+let nome = prompt("Qual o seu nome?")
 
 const promessa = axios.get('https://mock-api.driven.com.br/api/v4/shirts-api/shirts');
 promessa.then(processarResposta);
@@ -69,7 +69,6 @@ function checkLink() {
     if (contadorLink === 5) {
          contadorItems += 1
     }
-    console.log(contadorItems)
 }
 
 function verificarPedido() {
@@ -97,7 +96,22 @@ function enviarPedido() {
     enviandoPedido.catch(pedidoFalhou);
 }
 function pedidoRepetido(pedido) {
-    console.log(pedido)
+    let enviandoPedido
+    let imagem = document.querySelector(".pedidoPronto")
+    let pedido2 = {
+        "model": "t-shirt",
+        "neck": "v-neck",
+        "material": "silk",
+        "image": imagem,
+        "owner": nome,
+        "author": nome
+    }
+    let prosseguir = confirm("Prosseguir para realização do pedido?")
+    if (prosseguir === true) {
+        enviandoPedido = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", pedido2);
+        enviandoPedido.then(pedidoSucesso);
+        enviandoPedido.catch(pedidoFalhou);
+    }
 }
 
 function pedidoSucesso(response) {
@@ -106,4 +120,6 @@ function pedidoSucesso(response) {
 
 function pedidoFalhou (erro) {
     alert("Ops, não conseguimos processar sua encomenda")
+    const statusCode = erro.response.status;
+	console.log(statusCode);
 }
