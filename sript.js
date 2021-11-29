@@ -102,7 +102,7 @@ function pedidoRepetido(pedido) {
         "model": "t-shirt",
         "neck": "v-neck",
         "material": "silk",
-        "image": imagem,
+        "image": imagem.src,
         "owner": nome,
         "author": nome
     }
