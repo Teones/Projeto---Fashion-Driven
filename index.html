@@ -19,55 +19,73 @@
     <div class="navegacaoPrincipal">
         <div class="montarRoupa">
             Escolha o modelo
-            <div class="selecionaveis">
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/tshirt.png"></div>
+            <div class="selevionaveis">
+                <div class="modelo">
+                    <div class="tipo" onclick="escolhaModelo(this)">
+                        <img src="/Imagens/tshirt.png">
+                    </div>
                     <p>T-shirt</p>                
                 </div>
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/Camiseta.png"></div>
+                <div class="modelo">
+                    <div class="tipo" onclick="escolhaModelo(this)">
+                        <img src="/Imagens/Camiseta.png">
+                    </div>
                     <p>Camiseta</p>                
                 </div>
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/Mangalonga.png"></div>
+                <div class="modelo">
+                    <div class="tipo" onclick="escolhaModelo(this)">
+                        <img src="/Imagens/Mangalonga.png">
+                    </div>
                     <p>Manga longa</p>                
                 </div>
             </div>
         
             Escolha a gola
-            <div class="selecionaveis">
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/GolaV.png"></div>
+            <div class="selevionaveis">
+                <div class="gola">
+                    <div class="tipo" onclick="escolhaGola(this)">
+                        <img src="/Imagens/GolaV.png">
+                    </div>
                     <p>Gola V</p>                
                 </div>
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/GolaRedonda.png"></div>
+                <div class="gola">
+                    <div class="tipo" onclick="escolhaGola(this)">
+                        <img src="/Imagens/GolaRedonda.png">
+                    </div>
                     <p>Gola Redonda</p>                
                 </div>
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/GolaPolo.png"></div>
+                <div class="gola">
+                    <div class="tipo" onclick="escolhaGola(this)">
+                        <img src="/Imagens/GolaPolo.png">
+                    </div>
                     <p>Gola polo</p>                
                 </div>
             </div>
         
             Escolha o tecido
-            <div class="selecionaveis">
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/Seda.png"></div>
+            <div class="selevionaveis">
+                <div class="tecido">
+                    <div class="tipo" onclick="escolhaTecido(this)">
+                        <img src="/Imagens/Seda.png">
+                    </div>
                     <p>Seda</p>                
                 </div>
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/Algodão.png"></div>
+                <div class="tecido">
+                    <div class="tipo" onclick="escolhaTecido(this)">
+                        <img src="/Imagens/Algodão.png">
+                    </div>
                     <p>Algodão</p>                
                 </div>
-                <div class="tipo">
-                    <div class="ilustracao"><img src="/Imagens/Poliester.png"></div>
+                <div class="tecido">
+                    <div class="tipo" onclick="escolhaTecido(this)">
+                        <img src="/Imagens/Poliester.png">
+                    </div>
                     <p>Poliéster</p>                
                 </div>
             </div>
             Imagem de Referência <br>
-            <input type="text" placeholder="Insira o link">
-            <button>
+            <input type="text" class="input" placeholder="Insira o link">
+            <button class="confimarPedido" onclick="enviarPedido()">
                 Confimar Pedido
             </button>
         </div>
@@ -78,49 +96,20 @@
     <div class="ultimosPedidos">
         Ultimos pedidos
         <div class="pedidos">
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
-            <div class="pedido">
-                <img src="/Imagens/Blusa1.png">
-                <b>Criador:</b> Agata
-            </div>
+            <div class="pedido" onclick="pedidoRepetido(this)"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
+            <div class="pedido"></div>
         </div>
     </div>
     
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="sript.js"></script>
 </body>
 </html>
