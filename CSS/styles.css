@@ -10,6 +10,7 @@ header {
     justify-content: center;
     padding-left: 80px;
     position: fixed;
+    z-index: 1;
 }
 header img {
     width: 300px;
