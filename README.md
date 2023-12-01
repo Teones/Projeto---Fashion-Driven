@@ -11,10 +11,10 @@
 
 FashionDriven is a web page built using HTML, CSS, and JavaScript, designed for purchasing custom shirts. The platform provides users with a range of customization options, allowing them to choose the shirt type, collar style, fabric, and even upload a reference image for further personalization. Additionally, users have the option to buy pre-designed shirts from the latest orders. Explore the world of personalized fashion with FashionDriven!
 
-<p style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center;">
   <img src="Imagens/mobile.png" style="max-width: 50%; margin-right: 20px;"/>
   <img src="Imagens/mobile (1).png" style="max-width: 50%;">
-</p>
+</div>
 
 ## 🔨 Features
 
