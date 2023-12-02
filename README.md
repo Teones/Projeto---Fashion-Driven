@@ -19,7 +19,7 @@ FashionDriven is a web page built using HTML, CSS, and JavaScript, designed for 
 
 - `Feature 1`: Upon entering the website, the user is prompted to enter their name. Subsequently, they are free to choose the model, collar type, fabric, and can provide a link to an image to enhance the understanding of the clothing style.
 - `Feature 1a`: To submit the clothing model, it is necessary to click the "Confirm Order" button. However, the button will only be enabled if the user has correctly followed all previous steps.
-- `Feature 2`: Further down the screen, there is a history with the site's recent orders, along with the names of the creators of the clothing models. The user can place the same registered order by simply clicking on the desired one. relacionada à funcionalidade 2
+- `Feature 2`: Further down the screen, there is a history with the site's recent orders, along with the names of the creators of the clothing models. The user can place the same registered order by simply clicking on the desired one.
 
 
 ## 🛠️ Open and run the project
